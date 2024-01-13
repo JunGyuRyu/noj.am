@@ -1,9 +1,9 @@
 from sys import stdin
-num_len = int(input())
+num_len = int(stdin.readline())
 count_dict = dict()
 
 for i in range(num_len):
-    num = int(input());
+    num = int(stdin.readline());
     if num not in count_dict:
         count_dict[num] = 1
     else:
