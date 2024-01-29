@@ -2,10 +2,11 @@ from sys import stdin
 import math
 
 ch_now = 100
-ch_des = int(input().strip())
-broken_num = int(input().strip())
+ch_des = int(input().strip()) # 5457
+broken_num = int(input().strip()) # 3
 
 broken_btn = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
 tmp_btn = []
 if broken_num != 0:
     tmp_btn = list(map(int, stdin.readline().strip().split(" "))) # 6 7 8
