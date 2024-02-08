@@ -19,7 +19,7 @@ def solution(n, wires):
             node_num += 1
             for i in range(1, len(visit)):
                 if not graph[next_node][i] : continue
-                queue.appendleft(i)  # 연결된 노드를 큐에 추가
+                queue.appendleft(i)
         return node_num
 
     node_diff = []
@@ -28,7 +28,6 @@ def solution(n, wires):
         disconnect = wires_tmp.pop(i)
         node_num1 = count_node(n, wires_tmp)
         node_num2 = n - node_num1
-        # print(f"연결 노드 수: {node_num1}, disconnect: {disconnect}")
+        
         node_diff.append(abs(node_num1 - node_num2))
-        # print(f'노드 개수 차이: {abs(node_num1 - node_num2)}')
     return min(node_diff)
